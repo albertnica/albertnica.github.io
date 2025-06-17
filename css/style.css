@@ -4,7 +4,7 @@
   --muted: #555555;          /* Texto secundario */
   --bg: #FFFFFF;             /* Fondo blanco */
   --accent: #10B981;         /* Verde predominante */
-  --highlight-yellow: #F59E0B; /* Amarillo de énfasis */
+  --highlight-yellow: #f5e50b; /* Amarillo de énfasis */
 }
 
 * {
