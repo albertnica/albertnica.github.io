@@ -1,57 +1,78 @@
 :root {
-  --primary: #1F1F1F;   /* Negro oscuro */
-  --text: #1F1F1F;      /* Texto principal */
-  --muted: #555555;     /* Texto secundario */
-  --bg: #FFFFFF;        /* Fondo blanco */
-  --accent: #10B981;    /* Verde predominante */
+  --primary: #1F1F1F;
+  --text: #1F1F1F;
+  --muted: #555555;
+  --bg: #FFFFFF;
+  --accent: #10B981;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.5;
 }
+
 header {
   background: var(--primary);
   color: white;
   padding: 1.5rem;
 }
+
 .header-content {
   text-align: center;
 }
+
+/* Ajuste de tamaño de la foto de perfil */
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 150px;        /* Ancho actualizado */
+  height: 150px;       /* Alto actualizado */
+  border-radius: 50%;  
+  object-fit: cover;   /* Mantiene proporción y recorta */
   border: 3px solid var(--bg);
   margin-bottom: 0.8rem;
 }
+
 .subtitle {
   color: var(--muted);
   margin-top: 0.3rem;
 }
+
 .contact-info {
   margin-top: 0.8rem;
-  display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   font-size: 0.9rem;
 }
+
 .contact-info a {
   color: var(--accent);
   text-decoration: none;
 }
+
 nav {
   margin-top: 1rem;
-  display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
 nav a {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: background 0.3s;
 }
+
 nav a:hover {
   background: var(--accent);
   border-radius: 4px;
@@ -62,6 +83,7 @@ main {
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
 section {
   background: var(--bg);
   padding: 1.5rem;
@@ -69,13 +91,16 @@ section {
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+
 section h2 {
   color: var(--primary);
   margin-bottom: 1rem;
 }
+
 section ul {
   list-style: disc inside;
 }
+
 section ul li {
   margin-bottom: 0.5rem;
   color: var(--text);
@@ -87,12 +112,14 @@ section ul li {
   border-left: 4px solid var(--accent);
   background: var(--bg);
 }
+
 .skill-item h3 {
   margin-bottom: 0.3rem;
   color: var(--text);
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 0.6rem;
   border: 1px solid var(--muted);
@@ -100,6 +127,7 @@ form input, form textarea {
   font-family: inherit;
   margin-bottom: 1rem;
 }
+
 form button {
   background: var(--accent);
   color: white;
@@ -109,6 +137,7 @@ form button {
   cursor: pointer;
   transition: transform 0.2s;
 }
+
 form button:hover {
   transform: translateY(-2px);
 }
