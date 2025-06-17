@@ -4,162 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alberto Nieto Cardoso | Matemático y Físico</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary-color: #1E3A8A;
-      --accent-color: #F59E0B;
-      --bg-color: #F3F4F6;
-      --text-color: #111827;
-      --muted-color: #6B7280;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      color: var(--text-color);
-      background: var(--bg-color);
-    }
-    header {
-      background: var(--primary-color);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 { font-size: 2.5rem; }
-    header .subtitle {
-      font-size: 1.1rem;
-      color: var(--accent-color);
-      margin-top: 0.5rem;
-    }
-    nav {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 0.5rem 1rem;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background: var(--accent-color);
-      border-radius: 4px;
-    }
-    main { padding: 2rem 1rem; max-width: 800px; margin: auto; }
-    section {
-      margin-bottom: 3rem;
-      background: white;
-      padding: 1.5rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    section h2 {
-      color: var(--primary-color);
-      margin-bottom: 1rem;
-    }
-    .btn {
-      display: inline-block;
-      background: var(--accent-color);
-      color: white;
-      text-decoration: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 4px;
-      transition: transform 0.2s;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-    th, td {
-      padding: 0.8rem;
-      text-align: left;
-      border-bottom: 1px solid var(--bg-color);
-    }
-    th { background: var(--primary-color); color: white; }
-    footer {
-      text-align: center;
-      padding: 1.5rem 1rem;
-      background: var(--primary-color);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    footer a { color: var(--accent-color); text-decoration: none; }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header>
-    <h1>Alberto Nieto Cardoso</h1>
-    <p class="subtitle">Matemático y Físico – Universidad de Oviedo</p>
+    <div class="header-content">
+      <h1>Alberto Nieto Cardoso</h1>
+      <p class="subtitle">Matemático y Físico – Universidad de Oviedo</p>
+      <div class="contact-info">
+        <span>📍 Oviedo, ES</span>
+        <span>✉️ <a href="mailto:albncwork@gmail.com">albncwork@gmail.com</a></span>
+        <span>📞 +34 657 655 771</span>
+        <span>🔗 <a href="https://linkedin.com/in/tuPerfil" target="_blank">LinkedIn</a></span>
+        <span>💻 <a href="https://github.com/albertnica" target="_blank">GitHub</a></span>
+      </div>
+    </div>
     <nav>
-      <a href="#about">Sobre mí</a>
-      <a href="#research">Investigación</a>
-      <a href="#pubs">Publicaciones</a>
-      <a href="#contact">Contacto</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#educacion">Educación</a>
+      <a href="#logros">Logros</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#aptitudes">Aptitudes</a>
+      <a href="#aportes">Aportes</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <main>
-    <section id="about">
-      <h2>Sobre mí</h2>
-      <p>¡Hola! Soy Alberto Nieto Cardoso, matemático y físico formado en la Universidad de Oviedo. Me apasiona el
-         modelado de fenómenos complejos y la divulgación científica.</p>
+    <section id="perfil">
+      <h2>Perfil</h2>
+      <p>Graduado del Doble Grado en Matemáticas y Física por la Universidad de Oviedo. Nivel B2 en inglés (Cambridge English). Apasionado por
+         la investigación científica, el modelado matemático y las aplicaciones de inteligencia artificial a problemas reales.</p>
+      <p>Motivado por contribuir en proyectos de índole científica a través de la constancia y el trabajo en equipo. Dispuesto a cambiar de
+         ubicación dentro de España por motivos laborales.</p>
     </section>
 
-    <section id="research">
-      <h2>Investigación</h2>
+    <section id="educacion">
+      <h2>Educación</h2>
       <ul>
-        <li>Dinámica no lineal y caos</li>
-        <li>Física computacional y simulaciones numéricas</li>
-        <li>Modelos estocásticos en sistemas complejos</li>
+        <li><strong>I.E.S. Averroes, Córdoba</strong> (2014 – 2020): Educación Secundaria Obligatoria y Bachillerato, orientación científica con honores.</li>
+        <li><strong>Universidad de Oviedo</strong> (2020 – 2025): Doble Grado en Matemáticas y Física.</li>
       </ul>
     </section>
 
-    <section id="pubs">
-      <h2>Publicaciones</h2>
-      <table>
-        <thead>
-          <tr><th>Año</th><th>Título</th><th>Revista / Conferencia</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>2024</td><td>Modelado estocástico en sistemas híbridos</td><td>J. de Física Computacional</td></tr>
-          <tr><td>2023</td><td>Caos en sistemas de tres cuerpos</td><td>Acta Mathematica</td></tr>
-          <!-- Añade más filas aquí -->
-        </tbody>
-      </table>
+    <section id="logros">
+      <h2>Logros</h2>
+      <ul>
+        <li>Acreditación nivel B2 en inglés (Cambridge English).</li>
+        <li>Título de Bachillerato con orientación científica y honores.</li>
+        <li>Grado en Matemáticas.</li>
+        <li>Grado en Física.</li>
+      </ul>
     </section>
 
-    <section id="contact">
+    <section id="experiencia">
+      <h2>Experiencia</h2>
+      <ul>
+        <li>Internship en Mecánica de Fluidos – Instituto de Ciencias Matemáticas (Madrid).</li>
+        <li>Internship en Cosmología – Instituto de Física Teórica (Madrid).</li>
+      </ul>
+    </section>
+
+    <section id="aptitudes">
+      <h2>Aptitudes</h2>
+      <div class="skill-item">
+        <h3>Sólida formación en Matemáticas y Física</h3>
+        <p>Buena capacidad de comunicación y trabajo en equipo.</p>
+      </div>
+      <div class="skill-item">
+        <h3>Aprendizaje continuo</h3>
+        <p>Conocimiento de Python, Machine Learning, MATLAB, R y SQL.</p>
+      </div>
+      <div class="skill-item">
+        <h3>Competente en áreas transversales</h3>
+        <p>Adaptable, rápida capacidad de aprendizaje y dominio de Office & Adobe.</p>
+      </div>
+    </section>
+
+    <section id="aportes">
+      <h2>Aportes</h2>
+      <ul>
+        <li>TFG: Aplicación de modelos de IA en Ecuaciones en Derivadas Parciales. <a href="https://github.com/albertnica/TFGM-albertnica" target="_blank">Repositorio</a></li>
+        <li>TFG: Redes neuronales para regresión de parámetros cosmológicos. <a href="https://github.com/albertnica/TFGF-albertnica" target="_blank">Repositorio</a></li>
+      </ul>
+    </section>
+
+    <section id="contacto">
       <h2>Contacto</h2>
-      <form action="https://formspree.io/f/tuFormulario" method="POST">
+      <p>Escríbeme a <strong>albncwork@gmail.com</strong> o usa este formulario:</p>
+      <form action="https://formspree.io/f/mwkgywno" method="POST">
         <label>Nombre:<br><input type="text" name="name" required></label><br><br>
         <label>Email:<br><input type="email" name="_replyto" required></label><br><br>
-        <label>Mensaje:<br><textarea name="message" rows="5" required></textarea></label><br><br>
-        <button class="btn" type="submit">Enviar</button>
+        <label>Mensaje:<br><textarea name="message" rows="4" required></textarea></label><br><br>
+        <button type="submit">Enviar</button>
       </form>
+      <p class="form-note">* Asegúrate de activar tu cuenta en Formspree para recibir mensajes.</p>
     </section>
   </main>
 
   <footer>
-    <div>&copy; <span id="year"></span> Alberto Nieto Cardoso</div>
-    <div>
-      <a href="https://github.com/tuUsuario" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/tuUsuario" target="_blank">LinkedIn</a>
-    </div>
+    <p>&copy; <span id="year"></span> Alberto Nieto Cardoso</p>
   </footer>
 
   <script>
-    // Actualiza automáticamente el año en el pie de página
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
