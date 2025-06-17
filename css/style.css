@@ -1,9 +1,10 @@
 :root {
-  --primary: #1F1F1F;
-  --text: #1F1F1F;
-  --muted: #555555;
-  --bg: #FFFFFF;
-  --accent: #10B981;
+  --primary: #1F1F1F;        /* Negro oscuro */
+  --text: #1F1F1F;           /* Texto principal */
+  --muted: #555555;          /* Texto secundario */
+  --bg: #FFFFFF;             /* Fondo blanco */
+  --accent: #10B981;         /* Verde predominante */
+  --highlight-yellow: #F59E0B; /* Amarillo de énfasis */
 }
 
 * {
@@ -29,18 +30,18 @@ header {
   text-align: center;
 }
 
-/* Ajuste de tamaño de la foto de perfil */
 .profile-pic {
-  width: 150px;        /* Ancho actualizado */
-  height: 150px;       /* Alto actualizado */
-  border-radius: 50%;  
-  object-fit: cover;   /* Mantiene proporción y recorta */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
   border: 3px solid var(--bg);
   margin-bottom: 0.8rem;
 }
 
+/* Ahora la subtitulación es amarilla para mayor contraste */
 .subtitle {
-  color: var(--muted);
+  color: var(--highlight-yellow);
   margin-top: 0.3rem;
 }
 
